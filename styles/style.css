@@ -147,7 +147,8 @@ img[alt="Hero-image"] {
     justify-content: center;
     align-items: center;
 }
-.contact{
+
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,26 +156,96 @@ img[alt="Hero-image"] {
     gap: 15px;
     margin-top: 50px;
 }
-.horizontal-divider-contact{
+
+.horizontal-divider-contact {
     height: 10px;
     width: 140px;
     background-color: blue;
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.socials{
+
+.socials {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-img[alt="social"]{
-    width: 30px;
+
+img[alt="social"] {
+    width: 50px;
+}
+
+.fa-brands{
+    font-size: 30px;
+    margin-left: 10px;
 }
 
 /* ########### MEDIA QUERIES ##################### */
 
-@media  screen and (max-width: 576px) {
-    
+@media screen and (max-width: 576px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-heading img {
+        width: 50px;
+    }
+    img[alt="Hero-image"] {
+        width: 60vw;
+    }
+    .intro-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+    .intro-name h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .intro-name h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .project-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px; 
+    }
+    .project img{
+        width: 55vw;
+    }
+
+    .projects div h1,
+    .contact div h1{
+        font-size: 2rem;
+    }
+    .horizontal-divider{
+        height: 10px;
+        width: 135px;
+        background-color: blue;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .horizontal-divider-contact{
+        height: 10px;
+        width: 188px;
+        background-color: blue;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
 }
